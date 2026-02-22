@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brewed & Beloved – Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="css/contact.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Brewed <span>&amp; Beloved</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="offers.html">Offers</a></li>
+        <li class="nav-item"><a class="nav-link active-page" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a href="menu.html" class="btn-nav-cta">Order Now ☕</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero" style="background:linear-gradient(135deg,rgba(44,26,14,.92),rgba(107,63,42,.85)),url('https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=1400&q=80') center/cover fixed;">
+  <div class="container text-center position-relative" style="z-index:2;">
+    <div class="section-label" style="color:var(--latte);">Get In Touch</div>
+    <h1 class="page-hero-title">Find <em>Us</em></h1>
+    <p style="color:var(--latte);font-size:1.05rem;">We'd love to see you — walk in or book ahead</p>
+  </div>
+</div>
+
+<!-- CONTACT INFO CARDS -->
+<section class="section-pad bg-milk">
+  <div class="container">
+    <div class="row g-4 mb-5">
+      <div class="col-md-6 col-lg-3 fade-up">
+        <div class="contact-info-card">
+          <div class="ci-icon"><i class="bi bi-geo-alt-fill"></i></div>
+          <div>
+            <div class="ci-label">Address</div>
+            <div class="ci-value">45 Coffee Lane, Model Town, Ludhiana, Punjab 141002</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 fade-up" style="animation-delay:.1s;">
+        <div class="contact-info-card">
+          <div class="ci-icon"><i class="bi bi-telephone-fill"></i></div>
+          <div>
+            <div class="ci-label">Phone</div>
+            <div class="ci-value"><a href="tel:+919876543210" style="color:#666;text-decoration:none;">+91 98765 43210</a><br><a href="tel:+911614567890" style="color:#666;text-decoration:none;">+91 161 456 7890</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 fade-up" style="animation-delay:.2s;">
+        <div class="contact-info-card">
+          <div class="ci-icon"><i class="bi bi-envelope-fill"></i></div>
+          <div>
+            <div class="ci-label">Email</div>
+            <div class="ci-value"><a href="mailto:hello@brewedandbeloved.in" style="color:#666;text-decoration:none;">hello@brewedandbeloved.in</a><br><a href="mailto:bookings@brewedandbeloved.in" style="color:#666;text-decoration:none;">bookings@brewedandbeloved.in</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 fade-up" style="animation-delay:.3s;">
+        <div class="contact-info-card">
+          <div class="ci-icon"><i class="bi bi-instagram"></i></div>
+          <div>
+            <div class="ci-label">Social Media</div>
+            <div class="ci-value">
+              <a href="#" style="color:#666;text-decoration:none;">@brewedandbeloved</a><br>
+              <a href="#" style="color:#666;text-decoration:none;">fb.com/brewedandbeloved</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAP + FORM -->
+    <div class="row g-5">
+      <div class="col-lg-7 fade-up">
+        <div class="contact-card">
+          <h4 style="font-family:'Playfair Display',serif;color:var(--espresso);margin-bottom:1.5rem;">Book a Table</h4>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Your Name *</label>
+              <input type="text" class="form-control" id="fName" placeholder="Enter your name"/>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" class="form-control" id="fPhone" placeholder="+91 00000 00000"/>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" id="fEmail" placeholder="your@email.com"/>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Date *</label>
+              <input type="date" class="form-control" id="fDate"/>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Time Slot *</label>
+              <select class="form-select" id="fTime">
+                <option value="">Select time</option>
+                <option>Morning (8am – 12pm)</option>
+                <option>Afternoon (12pm – 4pm)</option>
+                <option>Evening (4pm – 8pm)</option>
+                <option>Night (8pm – 11pm)</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Guests *</label>
+              <select class="form-select" id="fGuests">
+                <option value="">Select guests</option>
+                <option>1 Person</option><option>2 People</option>
+                <option>3–5 People</option><option>6–10 People</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Seating Preference</label>
+              <select class="form-select" id="fSeating">
+                <option value="">Any preference</option>
+                <option>Indoor – Cozy Corner</option>
+                <option>Indoor – Window Seat</option>
+                <option>Outdoor – Terrace</option>
+                <option>Private Cabin</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Occasion</label>
+              <select class="form-select" id="fOccasion">
+                <option value="">None / Regular visit</option>
+                <option>Birthday Celebration</option>
+                <option>Anniversary</option>
+                <option>Business Meeting</option>
+                <option>Date</option>
+                <option>Study Session</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Special Request</label>
+              <textarea class="form-control" id="fNote" rows="3" placeholder="Any dietary needs, arrangements, or requests..."></textarea>
+            </div>
+            <div class="col-12">
+              <button class="btn-submit" onclick="submitReservation()">Confirm Reservation ☕</button>
+              <div id="successMsg">🎉 Reservation Confirmed! We'll send a confirmation to your phone. See you soon at Brewed &amp; Beloved!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 fade-up" style="animation-delay:.15s;">
+        <!-- Photo map placeholder -->
+        <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=600&q=80" alt="Our cafe exterior" style="width:100%;height:260px;object-fit:cover;border-radius:16px;box-shadow:0 10px 40px rgba(44,26,14,.15);margin-bottom:1.5rem;"/>
+
+        <!-- Hours Table -->
+        <div style="background:#fff;border-radius:16px;padding:1.8rem;box-shadow:0 6px 25px rgba(44,26,14,.09);">
+          <h6 style="font-family:'Playfair Display',serif;color:var(--espresso);font-size:1.1rem;margin-bottom:1rem;"><i class="bi bi-clock-fill me-2" style="color:var(--caramel);"></i>Opening Hours</h6>
+          <table class="hours-table w-100" id="hoursTable"></table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-pad bg-cream">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-head text-center fade-up">
+          <div class="section-label">Frequently Asked</div>
+          <h2 class="section-title">Got <span>Questions?</span></h2>
+          <div class="divider"></div>
+        </div>
+        <div id="faqList" class="mt-4"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">Brewed <span>&amp; Beloved</span></div>
+        <p class="mt-2 mb-3">Where every sip tells a story.</p>
+        <div>
+          <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Pages</h5>
+        <div class="d-flex flex-column gap-2">
+          <a href="index.html">Home</a><a href="menu.html">Menu</a>
+          <a href="gallery.html">Gallery</a><a href="about.html">About</a>
+          <a href="offers.html">Offers</a><a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h5>Visit Us</h5>
+        <p style="font-size:.88rem;color:var(--latte);">45 Coffee Lane, Model Town<br>Ludhiana, Punjab 141002</p>
+      </div>
+      <div class="col-lg-3">
+        <h5>Newsletter</h5>
+        <p style="font-size:.87rem;">Exclusive deals and new blend alerts!</p>
+        <div class="d-flex mt-2">
+          <input type="email" id="nlEmail" placeholder="Your email" style="flex:1;padding:.6rem .9rem;border:none;border-radius:8px 0 0 8px;font-size:.85rem;outline:none;"/>
+          <button onclick="subscribeNewsletter()" style="background:var(--caramel);color:#fff;border:none;padding:0 1rem;border-radius:0 8px 8px 0;font-weight:700;cursor:pointer;">Join</button>
+        </div>
+      </div>
+    </div>
+    <hr style="border-color:rgba(255,255,255,.1);"/>
+    <div class="text-center" style="font-size:.82rem;color:rgba(212,169,106,.5);">© 2025 Brewed &amp; Beloved · Made with <i class="fa-regular fa-heart"></i> in Ludhiana</div>
+  </div>
+</footer>
+
+<div class="toast-msg" id="toast"><i class="bi bi-check-circle-fill" style="color:var(--caramel);"></i><span id="toastTxt"></span></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

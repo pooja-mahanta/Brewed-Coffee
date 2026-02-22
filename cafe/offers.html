@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brewed & Beloved – Offers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="css/offers.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Brewed <span>&amp; Beloved</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active-page" href="offers.html">Offers</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a href="menu.html" class="btn-nav-cta">Order Now ☕</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero" style="background:linear-gradient(135deg,rgba(44,26,14,.92),rgba(107,63,42,.85)),url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1400&q=80') center/cover fixed;">
+  <div class="container text-center position-relative" style="z-index:2;">
+    <div class="section-label" style="color:var(--latte);">Special Deals</div>
+    <h1 class="page-hero-title">Today's <em>Offers</em></h1>
+    <p style="color:var(--latte);font-size:1.05rem;">Exclusive deals brewed just for you</p>
+  </div>
+</div>
+
+<!-- BIG OFFER -->
+<section class="section-pad bg-milk">
+  <div class="container">
+    <div class="big-offer fade-up">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <div style="display:inline-block;background:var(--caramel);color:#fff;font-size:.75rem;letter-spacing:3px;text-transform:uppercase;padding:.4rem 1.2rem;border-radius:30px;margin-bottom:1rem;">⚡ Today Only</div>
+          <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5vw,4rem);color:var(--cream);line-height:1.1;">Buy 2 Coffees,<br>Get 1 <span style="color:var(--caramel);">Free!</span></h2>
+          <p style="color:var(--latte);font-size:1.05rem;line-height:1.8;margin:1rem 0 1.5rem;">Bring a friend and enjoy any two of our signature blends — your third one is on us. Valid on all hot coffee drinks.</p>
+          <div id="bigCountdown" style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+            <div class="cbox"><div class="cnum" id="bHours">00</div><div class="clbl">Hours</div></div>
+            <div class="cbox"><div class="cnum" id="bMins">00</div><div class="clbl">Mins</div></div>
+            <div class="cbox"><div class="cnum" id="bSecs">00</div><div class="clbl">Secs</div></div>
+          </div>
+          <div class="code-box" style="max-width:280px;">
+            <div style="font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--latte);margin-bottom:.3rem;">Your Promo Code</div>
+            <div class="code-text">BREW2GET1</div>
+            <div style="font-size:.78rem;color:var(--latte);margin-top:.3rem;">Show at counter</div>
+          </div>
+          <div class="mt-3">
+            <button class="btn-primary-gold" onclick="copyCode('BREW2GET1')">Copy Code</button>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&q=80" alt="Coffee offer" style="border-radius:16px;width:100%;max-width:360px;box-shadow:0 30px 70px rgba(0,0,0,.5);"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MORE OFFERS -->
+<section class="section-pad bg-cream">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div class="section-label">More Deals</div>
+      <h2 class="section-title">All Current <span>Offers</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="row g-4 mt-2">
+      <div class="col-md-6 col-lg-4 fade-up">
+        <div class="offer-card">
+          <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?w=500&q=80" alt="Happy Hours" class="offer-card-img"/>
+          <div class="offer-card-body">
+            <div class="offer-tag">Daily Deal</div>
+            <div class="offer-title-sm">Happy Hours ☕</div>
+            <p class="offer-desc-sm">Every weekday from 3pm – 5pm, all coffees are 30% off. The perfect afternoon escape!</p>
+            <div class="offer-countdown" id="oc1"></div>
+            <button class="btn-primary-gold" onclick="claimDeal('HAPPY30')">Claim Deal</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 fade-up" style="animation-delay:.1s;">
+        <div class="offer-card">
+          <img src="https://images.unsplash.com/photo-1490914327627-9fe8d52f4d90?w=500&q=80" alt="Student Tuesday" class="offer-card-img"/>
+          <div class="offer-card-body">
+            <div class="offer-tag">Weekly</div>
+            <div class="offer-title-sm">Student Tuesday 📚</div>
+            <p class="offer-desc-sm">Every Tuesday, students get 20% off their entire order. Just show your student ID at the counter.</p>
+            <div style="background:rgba(200,131,42,.1);border-radius:8px;padding:.8rem;margin-bottom:1rem;font-size:.88rem;color:var(--mocha);">
+              <i class="bi bi-calendar-check me-2"></i>Every Tuesday · All Day
+            </div>
+            <button class="btn-primary-gold" onclick="claimDeal('STUDENT20')">Claim Deal</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 fade-up" style="animation-delay:.2s;">
+        <div class="offer-card">
+          <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=500&q=80" alt="Cold Brew Weekend" class="offer-card-img"/>
+          <div class="offer-card-body">
+            <div class="offer-tag">Weekend Only</div>
+            <div class="offer-title-sm">Cold Brew Weekend 🧊</div>
+            <p class="offer-desc-sm">Saturdays and Sundays: buy any cold drink and get a free cookie. No code needed — just ask!</p>
+            <div style="background:rgba(200,131,42,.1);border-radius:8px;padding:.8rem;margin-bottom:1rem;font-size:.88rem;color:var(--mocha);">
+              <i class="bi bi-calendar-check me-2"></i>Sat & Sun · All Day
+            </div>
+            <button class="btn-primary-gold" onclick="claimDeal('COLDWEEKEND')">Claim Deal</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 fade-up" style="animation-delay:.1s;">
+        <div class="offer-card">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500&q=80" alt="Birthday Special" class="offer-card-img"/>
+          <div class="offer-card-body">
+            <div class="offer-tag">Special</div>
+            <div class="offer-title-sm">Birthday Treat 🎂</div>
+            <p class="offer-desc-sm">It's your birthday month? Walk in, show your ID and enjoy a free drink of your choice. Our gift to you!</p>
+            <div style="background:rgba(200,131,42,.1);border-radius:8px;padding:.8rem;margin-bottom:1rem;font-size:.88rem;color:var(--mocha);">
+              <i class="bi bi-gift me-2"></i>All month during your birthday month
+            </div>
+            <button class="btn-primary-gold" onclick="claimDeal('BDAY')">Claim Deal</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 fade-up" style="animation-delay:.2s;">
+        <div class="offer-card">
+          <img src="https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?w=500&q=80" alt="Breakfast Combo" class="offer-card-img"/>
+          <div class="offer-card-body">
+            <div class="offer-tag">Combo</div>
+            <div class="offer-title-sm">Breakfast Combo 🥐</div>
+            <p class="offer-desc-sm">Any coffee + any pastry for just ₹250 (save up to ₹100). Available 8am–11am daily.</p>
+            <div style="background:rgba(200,131,42,.1);border-radius:8px;padding:.8rem;margin-bottom:1rem;font-size:.88rem;color:var(--mocha);">
+              <i class="bi bi-clock me-2"></i>Daily · 8am – 11am
+            </div>
+            <button class="btn-primary-gold" onclick="claimDeal('BREKKIE')">Claim Deal</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 fade-up" style="animation-delay:.3s;">
+        <div class="offer-card">
+          <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500&q=80" alt="Loyalty" class="offer-card-img"/>
+          <div class="offer-card-body">
+            <div class="offer-tag">Loyalty</div>
+            <div class="offer-title-sm">Loyalty Rewards ⭐</div>
+            <p class="offer-desc-sm">Buy 9 coffees, get your 10th completely free. Ask our staff to stamp your loyalty card today!</p>
+            <div style="background:rgba(200,131,42,.1);border-radius:8px;padding:.8rem;margin-bottom:1rem;font-size:.88rem;color:var(--mocha);">
+              <i class="bi bi-card-text me-2"></i>Pick up a loyalty card in-store
+            </div>
+            <button class="btn-primary-gold" onclick="claimDeal('LOYALTY10')">Start Card</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOYALTY DEMO -->
+<section class="section-pad" style="background:var(--espresso);">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-7 text-center fade-up">
+        <div class="section-label" style="color:var(--latte);">Your Card</div>
+        <h2 class="section-title mb-4" style="color:var(--cream);">Loyalty <span>Stamp Card</span></h2>
+        <div style="background:rgba(255,255,255,.05);border:2px solid rgba(200,131,42,.3);border-radius:20px;padding:2.5rem;">
+          <p style="color:var(--latte);font-size:.9rem;margin-bottom:1.5rem;">Click the cups to stamp your card! Get 9 stamps → free coffee ☕</p>
+          <div class="stamp-grid" id="stampGrid"></div>
+          <p id="stampMsg" style="color:var(--latte);font-size:.88rem;margin-top:1rem;"></p>
+          <button class="btn-primary-gold mt-3" onclick="resetStamps()">Reset Card</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">Brewed <span>&amp; Beloved</span></div>
+        <p class="mt-2 mb-3">Where every sip tells a story.</p>
+        <div>
+          <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Pages</h5>
+        <div class="d-flex flex-column gap-2">
+          <a href="index.html">Home</a><a href="menu.html">Menu</a>
+          <a href="gallery.html">Gallery</a><a href="about.html">About</a>
+          <a href="offers.html">Offers</a><a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h5>Visit Us</h5>
+        <p style="font-size:.88rem;color:var(--latte);">45 Coffee Lane, Model Town<br>Ludhiana, Punjab 141002</p>
+      </div>
+      <div class="col-lg-3">
+        <h5>Contact</h5>
+        <p style="font-size:.88rem;">
+          <a href="tel:+919876543210"><i class="bi bi-telephone-fill me-2" style="color:var(--caramel);"></i>+91 98765 43210</a><br>
+          <a href="mailto:hello@brewedandbeloved.in" class="mt-1 d-block"><i class="bi bi-envelope-fill me-2" style="color:var(--caramel);"></i>hello@brewedandbeloved.in</a>
+        </p>
+      </div>
+    </div>
+    <hr style="border-color:rgba(255,255,255,.1);"/>
+    <div class="text-center" style="font-size:.82rem;color:rgba(212,169,106,.5);">© 2025 Brewed &amp; Beloved · Made with  <i class="fa-regular fa-heart"></i> by Pooja Mahanta</div>
+  </div>
+</footer>
+
+<div class="toast-msg" id="toast"><i class="bi bi-check-circle-fill" style="color:var(--caramel);"></i><span id="toastTxt"></span></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/offers.js"></script>
+</body>
+</html>
